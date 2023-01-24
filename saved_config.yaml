@@ -1,0 +1,5 @@
+!!python/object:__main__.Config
+alpha: 0.0001
+alternative: two-sided
+paired: false
+statistic: t-test

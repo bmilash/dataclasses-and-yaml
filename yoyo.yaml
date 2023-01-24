@@ -1,0 +1,8 @@
+!!python/object:__main__.Organization
+ceo: !!python/object:__main__.Contact
+  address: 123 4th St.
+  city: SLC
+  name: Brett Milash
+  state: UT
+  zipcode: 84103
+name: Yoyodyne Inc.
