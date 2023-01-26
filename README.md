@@ -17,9 +17,11 @@ handle all of this for you.
 
 ## What is a data class?
 
-A Data Class is a decorated class, and that decoration provides 
-nice __init__, __repr__, and other useful "dunder" methods.
-This has been part of the Python Standard Library since version 3.7.
+A Data Class is a class that has been decorated with the __@dataclass__ 
+decorator, and that decoration provides nice \__init__, \__repr__, and other 
+useful "dunder" methods. This has been part of the Python Standard Library 
+since version 3.7.
+
 [https://docs.python.org/3/library/dataclasses.html](https://docs.python.org/3/library/dataclasses.html "python data class docs")
 
 ## What is decoration / what is a decorator?
@@ -35,8 +37,10 @@ The @dataclass decorator is a good example.
 
 YAML is "Yet Another Markup Language" (or "YAML Ain't Markup Language"),
 a simple, human-readable format for data that is "serialized" (i.e. suitable 
-for storage and transmission).
+for storage and transmission).  
+
 [https://en.wikipedia.org/wiki/YAML#History_and_name](https://en.wikipedia.org/wiki/YAML#History_and_name)
+
 The python [__yaml__](https://pyyaml.org) library (contained in the 
 [PyYAML package](https://pypi.org/project/PyYAML/)) is easy to install, 
 and provides the translation for our objects to YAML and back.
