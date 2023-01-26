@@ -7,49 +7,55 @@ A common programming task is to read and validate small amounts of data from
 files, or format and write that data back to files. 
 These data could be program parameters or configuration values for example. 
 You can spend a significant amount of time writing code to parse 
-configuration files, check data types, validate that data,
-and pass these values around in your program. All of that requires
+configuration files, validate that data, pass these values around in your 
+program, format and write them back to files, and all of that requires
 maintenance. The addition of a new parameter can entail changing multiple
 places in your code.
 
-A better solution is to leverage the dataclasses and pyyaml libraries to
+A better solution is to leverage the dataclasses and yaml libraries to
 handle all of this for you.
 
 ## What is a data class?
-	A Data Class is a decorated class, and that decoration provides a 
-	nice __init__, __repr__, and other useful "dunder" methods.
-	This is part of the Python Standard Library since version 3.7.
-	https://docs.python.org/3/library/dataclasses.html
 
-## What is a decorator?
-	A decorator is a bit of python shorthand that takes an
-	object (e.g. a class or a function) and enhances it with
-	useful behavior for free that you don't need to write.
-	The @dataclass decorator is a good example.
-	(Reference a good pycon talk)
+A Data Class is a decorated class, and that decoration provides 
+nice __init__, __repr__, and other useful "dunder" methods.
+This has been part of the Python Standard Library since version 3.7.
+[https://docs.python.org/3/library/dataclasses.html](https://docs.python.org/3/library/dataclasses.html "python data class docs")
+
+## What is decoration / what is a decorator?
+
+A decorator is a bit of python shorthand that takes an
+object (e.g. a class or a function) and enhances it with
+useful behavior __for free__ that you don't need to write.
+The @dataclass decorator is a good example.
+
+(Reference a good tutorial on decorators)
 
 ## What is YAML?
-	YAML is "Yet Another Markup Language", 
-	( or "YAML Ain't Markup Language")
-	https://en.wikipedia.org/wiki/YAML#History_and_name
-	a simple, human-readable way to "serialize" data (ie make it storable
-	and transmittable).
 
-Example 1: define a data class, create an instance of that type, save it 
-as YAML, and read it back from YAML.
+YAML is "Yet Another Markup Language" (or "YAML Ain't Markup Language"),
+a simple, human-readable format for data that is "serialized" (i.e. suitable 
+for storage and transmission).
+[https://en.wikipedia.org/wiki/YAML#History_and_name](https://en.wikipedia.org/wiki/YAML#History_and_name)
+The python [__yaml__](https://pyyaml.org) library (contained in the 
+[PyYAML package](https://pypi.org/project/PyYAML/)) is easy to install, 
+and provides the translation for our objects to YAML and back.
 
-Example 1b: Maintenance. Add an attribute to a data class.
-Don't need to update the code that initializes the variable, saves it, reads
-it back in, or passes that variable to functions.
+## Examples
 
-Example 2: define a data class in an external file, define a list of instances 
+1. Define a data class, create an instance of that type, save it as YAML, 
+and read it back from YAML.
+
+2. Maintenance. Add an attribute to a data class.
+
+3. Define a data class in an external file, define a list of instances 
 of that data class, save as YAML, and read it back in.
 
-Example 3: Nested data classes.
+4. Nested data classes.
 
-Example 4: Recursive data classes.
+5. Recursive data classes.
 
-Example 5: program configuration data class, read it in from YAML, and
-override some settings on the command line.
+6. Program configuration data class. Read it in from YAML, and override 
+some settings on the command line.
 
-Example 6: Using JSON instead of YAML.
+7. Using JSON instead of YAML.
