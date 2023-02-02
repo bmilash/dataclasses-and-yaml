@@ -63,3 +63,13 @@ of that data class, save as YAML, and read it back in.
 some settings on the command line.
 
 7. Using JSON instead of YAML.
+
+
+## Background
+
+Dataclasses introduced in python 3.7, first proposed in Python Enhancement
+Proposal (PEP) 557: https://peps.python.org/pep-0557/ .
+"Where is it not appropriate to use Data Classes?
+
+    API compatibility with tuples or dicts is required.
+    Type validation beyond that provided by PEPs 484 and 526 is required, or value validation or conversion is required."

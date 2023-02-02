@@ -1,6 +1,0 @@
-!!python/tuple
-- !!python/object:__main__.City
-  elevation: null
-  latitude: 33.4
-  longitude: -111.93
-  name: Tempe
