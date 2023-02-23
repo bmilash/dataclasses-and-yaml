@@ -59,11 +59,13 @@ of that data class, save as YAML, and read it back in.
 
 5. Recursive data classes.
 
-6. Program configuration data class. Read it in from YAML, and override 
-some settings on the command line.
+6. Validation
 
 7. Using JSON instead of YAML.
 
+## Run this on mybinder.org
+
+https://mybinder.org/v2/gh/bmilash/dataclasses-and-yaml/HEAD
 
 ## Background
 
