@@ -1,49 +1,51 @@
 # dataclasses-and-yaml
 
-These are the course materials for the Python Dataclasses and YAML 
-presentation at the RMACC '23 Symposium.
+These are the course materials for the Python Data Classes and YAML presentation at the RMACC '23 Symposium.
 
-A common programming task is to read and validate small amounts of data from 
-files, or format and write that data back to files. 
-These data could be program parameters or configuration values for example. 
-You can spend a significant amount of time writing code to parse 
-configuration files, validate that data, pass these values around in your 
-program, format and write them back to files, and all of that requires
-maintenance. The addition of a new parameter can entail changing multiple
-places in your code.
+A common programming task is to read small amounts of data from files, or 
+format and write that data back to files. These data could be program 
+parameters or configuration values for example. You can spend a significant 
+amount of time writing custom code to parse configuration files, pass these 
+values around in your program, format and write them back to files. All of 
+that code requires maintenance - the addition of a new parameter can entail 
+changing multiple places in your code.
 
-A better solution is to leverage the dataclasses and yaml libraries to
+A better solution is to leverage the **yaml** and **dataclasses** libraries to 
 handle all of this for you.
-
-## What is a data class?
-
-A Data Class is a class that has been decorated with the __@dataclass__ 
-decorator, and that decoration provides nice \__init__, \__repr__, and other 
-useful "dunder" methods. This has been part of the Python Standard Library 
-since version 3.7.
-
-[https://docs.python.org/3/library/dataclasses.html](https://docs.python.org/3/library/dataclasses.html "python data class docs")
-
-## What is decoration / what is a decorator?
-
-A decorator is a bit of python shorthand that takes an
-object (e.g. a class or a function) and enhances it with
-useful behavior __for free__ that you don't need to write.
-The @dataclass decorator is a good example.
-
-(Reference a good tutorial on decorators)
 
 ## What is YAML?
 
-YAML is "Yet Another Markup Language" (or "YAML Ain't Markup Language"),
-a simple, human-readable format for data that is "serialized" (i.e. suitable 
-for storage and transmission).  
+YAML is "Yet Another Markup Language" (or "YAML Ain't Markup Language"), a 
+simple, human-readable format for data that is "serialized" (i.e. suitable 
+for storage and transmission).
 
-[https://en.wikipedia.org/wiki/YAML#History_and_name](https://en.wikipedia.org/wiki/YAML#History_and_name)
+https://en.wikipedia.org/wiki/YAML#History_and_name
 
-The python [__yaml__](https://pyyaml.org) library (contained in the 
-[PyYAML package](https://pypi.org/project/PyYAML/)) is easy to install, 
-and provides the translation for our objects to YAML and back.
+The python [yaml](https://pyyaml.org/) library (contained in the [PyYAML 
+package](https://pypi.org/project/PyYAML/)) is easy to install, and provides 
+the translation for our objects into YAML and back.
+
+## What is a data class?
+
+A Data Class is a class that has been decorated with the **@dataclass** 
+decorator, and that decoration provides nice \_\_init\_\_, \_\_repr\_\_, 
+\_\_eq\_\_, and other useful "dunder" methods. Data classes were added to the 
+Python Standard Library in version 3.7.
+
+Data classes were designed as a convenient way to hold related data values. 
+They were *not* intended as a mechanism for rigorous data type and value 
+validation (although we can do some validation).
+
+https://docs.python.org/3/library/dataclasses.html
+
+## What is decoration / what is a decorator?
+
+A decorator is a python function that enhances an object (e.g. a class or 
+a function) with useful behavior **for free** that you don't need to write. 
+Decorators use a convenient **@sign** syntax to simplify this. The 
+@dataclass decorator is a good example.
+
+(Reference a good tutorial on decorators)
 
 ## Examples
 
