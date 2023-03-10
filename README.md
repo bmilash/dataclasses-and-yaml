@@ -67,7 +67,7 @@ of that data class, save as YAML, and read it back in.
 
 ## Run this on mybinder.org
 
-https://mybinder.org/v2/gh/bmilash/dataclasses-and-yaml/HEAD
+https://mybinder.org/v2/gh/bmilash/dataclasses-and-yaml/HEAD?labpath=introduction.ipynb
 
 ## Background
 
