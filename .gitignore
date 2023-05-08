@@ -1,5 +1,7 @@
 __pycache__
 .ipynb_checkpoints
-*.yaml
 *.json
-Python
+cities.yaml
+fruit.yaml
+scottsdale.yaml
+yoyo.yaml

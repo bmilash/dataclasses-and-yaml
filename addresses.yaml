@@ -1,0 +1,8 @@
+!!python/object:__main__.AddressBook
+contacts:
+- !!python/object:__main__.Contact
+  name: Slackwater Pizza
+  phone: (801) 386-9777
+- !!python/object:__main__.Contact
+  name: Settebello Pizza
+  phone: (801) 322-3556
