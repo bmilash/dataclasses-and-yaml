@@ -38,14 +38,16 @@ validation (although we can do some validation).
 
 https://docs.python.org/3/library/dataclasses.html
 
-## What is decoration / what is a decorator?
+## What is a decorator?
 
 A decorator is a python function that enhances an object (e.g. a class or 
-a function) with useful behavior **for free** that you don't need to write. 
+a function) with useful behavior **for free** that you don't need to code. 
 Decorators use a convenient **@sign** syntax to simplify this. The 
 @dataclass decorator is a good example.
 
-(Reference a good tutorial on decorators)
+Here is a good introduction to decorators: https://realpython.com/primer-on-python-decorators/
+
+Writing your own decorators can be tricky, but using decorators is really simple.
 
 ## Examples
 
@@ -64,6 +66,10 @@ of that data class, save as YAML, and read it back in.
 6. Validation
 
 7. Using JSON instead of YAML.
+
+## Run this in JupyterLite
+
+https://home.chpc.utah.edu/~u0424091/Python/lab?path=dataclasses-and-yaml%2Fintroduction.ipynb
 
 ## Run this on mybinder.org
 
