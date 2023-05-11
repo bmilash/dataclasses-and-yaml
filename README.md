@@ -69,6 +69,10 @@ of that data class, save as YAML, and read it back in.
 
 ## Run this in JupyterLite
 
+https://bit.ly/rmacc_dataclasses
+
+or
+
 https://home.chpc.utah.edu/~u0424091/Python/lab?path=dataclasses-and-yaml%2Fintroduction.ipynb
 
 ## Run this on mybinder.org
