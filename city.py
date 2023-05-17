@@ -3,6 +3,6 @@ from dataclasses import dataclass
 
 @dataclass 
 class City:
-	name: str
-	latitude: float
-	longitude: float
+    name: str
+    latitude: float
+    longitude: float
